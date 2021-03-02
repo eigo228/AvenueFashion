@@ -2057,7 +2057,9 @@ PRODUCT VIEW PAGE ****************************
 .view__listing {
 	margin-bottom: 40px
 }
-.view__colour h4, .view__size h4, .view__qty h4 {
+.view__colour label, .view__size label, .view__qty label {
+	display: flex;
+	flex-direction: column;
 	font-size: 13px;
 	line-height: 30px;
 	font-weight: 600;
