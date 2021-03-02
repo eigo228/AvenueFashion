@@ -51,5 +51,16 @@ $(document).ready(function() {
 		$('.stores__info.paris').addClass('visible');
 		$('iframe').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1275.1442161411203!2d2.2943346414706545!3d48.85787536077809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2z0K3QudGE0LXQu9C10LLQsCDQsdCw0YjQvdGP!5e0!3m2!1sru!2skg!4v1614495321146!5m2!1sru!2skg')
 	})
+	const anchors = document.querySelectorAll('a[href*="#"]');
+	for(let anchor of anchors) {
+		anchor.addEventListener('click', function(event) {
+			event.preventDefault();
+			const blockID = anchor.getAttribute('href');
+			document.querySelector('' + blockID).scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			})
+		})
+	}
 
 });
