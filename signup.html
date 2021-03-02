@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
 	<link rel="stylesheet" type="text/css" href="style/reset.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -187,7 +187,7 @@
 					<div class="container">
 						<div class="sign__row">
 							<div class="sign-in">
-								<form action='' method="POST" id='login'>
+								<form action='checker.php' method="POST" id='login'>
 									<div class="sign__title">
 										<h3>sign in</h3>
 									</div>
@@ -202,7 +202,7 @@
 								</form>
 							</div>
 							<div class="sign-up">
-								<form action='' method="POST" id='register'>
+								<form action='checker.php' method="POST" id='register'>
 									<div class="sign__title">
 										<h3>register</h3>
 									</div>
@@ -211,7 +211,7 @@
 										<input type="password" name="pass" placeholder='Your password..' minlength='6' maxlength="35"  required="">
 										<input type="password" name="pass" placeholder='Confirm password..' minlength='6' maxlength="35"  required="">
 										<div class="sign__checkbox">
-											<input type="checkbox" name="">
+											<input type="checkbox" name="checky">
 											<p class='parag'>Sign up for exclusive updates, discounts, new arrivals, contests and more!</p>
 										</div>
 									</div>
@@ -347,7 +347,7 @@
 			</div>	
 	</div>
 	<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
-	<script type="text/javascript" src='scripts/script.js'></script>
-	<script type="text/javascript" src='scripts/logging.js'></script>
+	<script src='scripts/script.js'></script>
+	<script src='scripts/logging.js'></script>
 </body>
 </html>
